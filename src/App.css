@@ -21,14 +21,36 @@ nav a{
 }
 
 .card-container {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 100%;
   background-color: #b5277f;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
-  min-height: 100vh;
   justify-content: center;
+  row-gap: 20px;
 }
 
 .card{
-  
+  width: 200px;
+  height: 120px;
+  border: solid;
+  border-radius: 10px;
+  background-color: red;
+}
+
+.card-name{
+  font-weight: 700;
+}
+
+.name-container{
+  text-align: center
+}
+
+.card-text{
+}
+
+.card:hover{
+  background-color: #b5277f;
 }
