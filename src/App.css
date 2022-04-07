@@ -26,7 +26,7 @@ nav a{
   padding-bottom: 100%;
   background-color: #b5277f;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   column-gap: 10px;
   justify-content: center;
   row-gap: 20px;

@@ -23,14 +23,25 @@ function App() {
         <Card
           typ="Data Science"
           firma="DB"
-          position="Data Science 13 st./woche"
+          position="Data Science 0 st./woche"
           link="https://karriere.deutschebahn.com/karriere-de/Suche/Werkstudent-Data-Science-w-m-d--7269560?jobId=133298"
         />
-        <Card
-          number={2}
-          text="piska popka iska pipiska iska pipiska iska pipiska iska pipiska iska pipiska"
-        />
-        <Card number={3} piska="vonuchaya" />
+        <Card position="Data Science 1 st./woche" />
+        <Card position="Data Science 2 st./woche" />
+        <Card position="Data Science 3 st./woche" />
+        <Card position="Data Science 4 st./woche" />
+        <Card position="Data Science 5 st./woche" />
+        <Card position="Data Science 6 st./woche" />
+        <Card position="Data Science 7 st./woche" />
+        <Card position="Data Science 8 st./woche" />
+        <Card position="Data Science 9 st./woche" />
+        <Card position="Data Science 10 st./woche" />
+        <Card position="Data Science 11 st./woche" />
+        <Card position="Data Science 12 st./woche" />
+        <Card position="Data Science 13 st./woche" />
+        <Card position="Data Science 14 st./woche" />
+        <Card position="Data Science 15 st./woche" />
+        <Card position="Data Science 16 st./woche" />
       </div>
     </>
   )
