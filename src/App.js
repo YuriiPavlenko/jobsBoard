@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import jsonData from "../data/jobsForOlga.json"
 import "./App.css"
 import Navbar from "./components/Navbar"
 import Card from "./components/Card"
@@ -8,16 +7,15 @@ function App() {
   const [cards, setCards] = useState([])
 
   useEffect(() => {
-    // const fetchData = async () => {
-    //   const httpRequest = await fetch("../data/jobsForOlga.JSON")
-    //   const data = await httpRequest
-    //   console.log(data)
-    // }
-    //fetchData()
-    const data = [...jsonData]
-    console.log(data)
-  }, [cards])
+    const fetchData = async () => {
+      const httpRequest = await fetch("jobsForOlga.json")
+      const data = await httpRequest.json()
+      setCards(data.stellen)
+    }
+    fetchData()
+  }, [])
 
+  console.log(cards)
   return (
     <>
       <Navbar />
