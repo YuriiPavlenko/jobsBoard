@@ -26,7 +26,7 @@ nav a{
   padding-bottom: 100%;
   background-color: pink;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
   column-gap: 10px;
   justify-content: center;
   row-gap: 20px;
@@ -38,7 +38,6 @@ nav a{
   height: 240px;
   border: solid;
   border-radius: 10px;
-  background-color: rgb(255, 145, 0);
 }
 
 .card-name{
@@ -65,4 +64,23 @@ nav a{
 
 a{
   all:unset;
+}
+
+.button{
+  float: right;
+  border: none;
+  font-size: xx-large;
+  background-color: inherit;
+}
+
+.applied{
+  background-color: rgb(255, 0, 0);
+}
+
+.wont-apply{
+  background-color: rgb(172, 49, 141);
+}
+
+.to-apply{
+  background-color: rgb(12, 247, 0);
 }

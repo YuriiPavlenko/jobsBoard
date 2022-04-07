@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const httpRequest = await fetch("jobsForOlga.json")
+      const httpRequest = await fetch("jopsForJopa.json")
       const data = await httpRequest.json()
       setCards(data.stellen)
     }
@@ -25,6 +25,7 @@ function App() {
               typ={card.typ}
               firma={card.firma}
               position={card.position}
+              status={card.status}
               link={card.link}
             />
           )
