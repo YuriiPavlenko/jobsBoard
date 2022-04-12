@@ -1,0 +1,192 @@
+{
+  "stellen": [
+    {
+      "typ": "Data Science",
+      "firma": "DB",
+      "status": "won't apply",
+      "position": "Data Science 13 st./woche",
+      "link": "https://karriere.deutschebahn.com/karriere-de/Suche/Werkstudent-Data-Science-w-m-d--7269560?jobId=133298",
+      "id": "82ea25c0-79d5-538d-a548-54125a712b9a",
+      "key": "82ea25c0-79d5-538d-a548-54125a712b9a"
+    },
+    {
+      "typ": "Data Science",
+      "firma": "KPMG",
+      "status": "to be applied",
+      "position": "Data Science / Data Analytics",
+      "link": "https://jobs.kpmg.de/default/job/Berlin-Werkstudent-%28wmd%29-Data-Science-Data-Analytics-10785/571913501/",
+      "id": "f433397b-962f-5a32-849e-48300a7854b8",
+      "key": "f433397b-962f-5a32-849e-48300a7854b8"
+    },
+    {
+      "typ": "Data Science",
+      "firma": "Knuddles",
+      "status": "applied",
+      "position": "Data Science / Data Engineering",
+      "link": "https://knuddels.recruitee.com/o/werkstudentin-data-science-data-engineering-mwd",
+      "id": "a17ffedb-7ebb-523a-823b-2c2572eb60b4",
+      "key": "a17ffedb-7ebb-523a-823b-2c2572eb60b4"
+    },
+    {
+      "typ": "Data Science",
+      "firma": "Viridium",
+      "status": "to be applied",
+      "position": "Risk Analytics",
+      "link": "https://www.viridium-gruppe.com/karriere/stellenangebote/detail/werkstudentin-risk-analytics/",
+      "id": "e4b95d81-499c-599f-881c-28eb90ac22a2",
+      "key": "e4b95d81-499c-599f-881c-28eb90ac22a2"
+    },
+    {
+      "typ": "Data Science",
+      "firma": "Fincite",
+      "status": "to be applied",
+      "position": "DS Quantitative Analyst",
+      "link": "https://fincite-gmbh.jobs.personio.de/job/600127?display=en",
+      "id": "669a96f9-2ab0-5d3f-8841-5f73fc0b2cb7",
+      "key": "669a96f9-2ab0-5d3f-8841-5f73fc0b2cb7"
+    },
+    {
+      "typ": "Data Science",
+      "firma": "UNITY Consulting and Innovation",
+      "status": "to be applied",
+      "position": "Data Science & Software Engineering",
+      "link": "https://jobs.unity-innovation-alliance.com/Studentische-HilfskraftPraktikant-Data-Science-Software-En-eng-j414.html",
+      "id": "41d932ce-ab96-5821-bec3-464052ee50e7",
+      "key": "41d932ce-ab96-5821-bec3-464052ee50e7"
+    },
+    {
+      "typ": "Data Science",
+      "firma": "Reply",
+      "status": "to be applied",
+      "position": "Artificial Intelligence",
+      "link": "https://www.reply.com/de/about/careers/jobdetails?jobid=JO-DEU-1097",
+      "id": "144be258-eb3c-5fd4-bd88-832212ce2118",
+      "key": "144be258-eb3c-5fd4-bd88-832212ce2118"
+    },
+    {
+      "typ": "Project Management",
+      "firma": "DB",
+      "status": "applied",
+      "position": "PM Digitalisation",
+      "link": "https://karriere.deutschebahn.com/karriere-de/Suche/Werkstudent-Digitalization-w-m-d--7518424?jobId=147404",
+      "id": "29db7866-650d-5a75-b5ff-1e8a530700bc",
+      "key": "29db7866-650d-5a75-b5ff-1e8a530700bc"
+    },
+    {
+      "typ": "Project Management",
+      "firma": "EUREX Frankfurt AG",
+      "status": "applied",
+      "position": "Trading Design",
+      "link": "https://careers.deutsche-boerse.com/offer/working-student-trading-design-f-m-/547233",
+      "id": "e4db177f-3388-503e-a71d-9a0dff5dbd20",
+      "key": "e4db177f-3388-503e-a71d-9a0dff5dbd20"
+    },
+    {
+      "typ": "Fullstack",
+      "firma": "Google Inc.",
+      "status": "to be applied",
+      "position": "React ASP.NET",
+      "link": "#",
+      "id": "c96fbdbe-c34e-49ec-a21a-2e99411b7c0b",
+      "key": "c96fbdbe-c34e-49ec-a21a-2e99411b7c0b"
+    },
+    {
+      "typ": "Fullstackies",
+      "firma": "Google Inc.",
+      "status": "to be applied",
+      "position": "React ASP.NET",
+      "link": "#",
+      "id": "d1227203-6d6a-433c-8836-7f44212a6262",
+      "key": "d1227203-6d6a-433c-8836-7f44212a6262"
+    },
+    {
+      "typ": "Fullstackies",
+      "firma": "Google Inc.",
+      "status": "to be applied",
+      "position": "Reactasdf ASP.NET",
+      "link": "#",
+      "id": "21a39851-7e48-451d-b38f-f15da0862b50",
+      "key": "21a39851-7e48-451d-b38f-f15da0862b50"
+    },
+    {
+      "typ": "Fullstackies",
+      "firma": "Google Inc.",
+      "status": "to be applied",
+      "position": "React A234234SP.NET",
+      "link": "#",
+      "id": "0f5844f4-98d1-40cc-94e5-e345e30cfa68",
+      "key": "0f5844f4-98d1-40cc-94e5-e345e30cfa68"
+    },
+    {
+      "typ": "Fullstackies",
+      "firma": "Google Inc.",
+      "status": "to be applied",
+      "position": "React A234234SP.NET",
+      "link": "#",
+      "id": "ade96f5c-5915-435a-8e8a-128078552b25",
+      "key": "ade96f5c-5915-435a-8e8a-128078552b25"
+    },
+    {
+      "typ": "Fullstackies",
+      "firma": "Goog13123le Inc.",
+      "status": "to be applied",
+      "position": "React A234234SP.NET",
+      "link": "#",
+      "id": "6f7a1ccd-e14c-4849-bfbb-997d02e8d464",
+      "key": "6f7a1ccd-e14c-4849-bfbb-997d02e8d464"
+    },
+    {
+      "typ": "Fullstackies",
+      "firma": "Goog13123le Inc.",
+      "status": "to b1313e applied",
+      "position": "React A234234SP.NET",
+      "link": "#",
+      "id": "4d200b3a-aa9d-4160-a743-4b6f949c8a22",
+      "key": "4d200b3a-aa9d-4160-a743-4b6f949c8a22"
+    },
+    {
+      "typ": "Fullstackies",
+      "firma": "Goog13123le Inc.",
+      "status": "to b1313e applied",
+      "position": "React A234234SP.NET",
+      "link": "#",
+      "id": "010ecda2-d85e-46ff-b3b9-5eaa35b46918",
+      "key": "010ecda2-d85e-46ff-b3b9-5eaa35b46918"
+    },
+    {
+      "typ": "Fullstackadad",
+      "firma": "Goog13123le Inc.",
+      "status": "to b1313e applied",
+      "position": "React A234234SP.NET",
+      "link": "#",
+      "id": "9c9003e5-5ff6-4720-b93f-59cb5350b454",
+      "key": "9c9003e5-5ff6-4720-b93f-59cb5350b454"
+    },
+    {
+      "typ": "Fullstack123123",
+      "firma": "Google Inc.",
+      "status": "to be applied",
+      "position": "React ASP.NET",
+      "link": "#",
+      "id": "9319b37a-e767-46e0-a7ec-3ebad89a4121",
+      "key": "9319b37a-e767-46e0-a7ec-3ebad89a4121"
+    },
+    {
+      "typ": "Fullstack",
+      "firma": "Google Inc.3333",
+      "status": "to be applied",
+      "position": "React ASP.NET",
+      "link": "#",
+      "id": "22fcc233-8139-4aa5-83fa-37eb61b3441f",
+      "key": "22fcc233-8139-4aa5-83fa-37eb61b3441f"
+    },
+    {
+      "typ": "Fullstack",
+      "firma": "Google Inc.",
+      "status": "to be applied",
+      "position": "React ASP.NET",
+      "link": "#dgdfgdg",
+      "id": "5811064e-bf41-4a3f-937c-c530b5d2ec58"
+    }
+  ]
+}

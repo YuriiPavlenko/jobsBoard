@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 nav{
   display: grid;
   column-gap: minmax(5px, 20px);
@@ -46,6 +50,7 @@ nav a{
 }
 
 .name-container{
+  margin-bottom: 30px;
   text-align: center
 }
 
@@ -55,11 +60,8 @@ nav a{
 }
 
 .card:hover{
-  background-color: #b5277f;
-}
+  background-color: inherit;
 
-.text-otstup{
-  margin-top: 15px;
 }
 
 a{
@@ -69,18 +71,110 @@ a{
 .button{
   float: right;
   border: none;
-  font-size: xx-large;
+  font-size: x-large;
   background-color: inherit;
+}
+
+.button:hover{
+  cursor: pointer;
+
 }
 
 .applied{
   background-color: rgb(255, 0, 0);
 }
 
+.applied:hover{
+  border: red solid 3px;
+}
+
 .wont-apply{
   background-color: rgb(172, 49, 141);
 }
 
+.wont-apply:hover{
+  border: rgb(172, 49, 141) solid 3px;
+}
+
 .to-apply{
+  background-color: rgb(12, 247, 0);
+}
+
+.to-apply:hover{
+  border: rgb(12, 247, 0) solid 3px;
+}
+
+.add{
+  font-size: xx-large;
+  text-align: center;
+  border:solid rgba(0, 0, 0, 0.37);
+  width: 40px;
+  height: 40px;
+  line-height: 1;
+  border-radius: 100px;
+  background-color: inherit;
+}
+
+.add-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add:hover{
+  cursor: pointer;
+}
+
+.card input{
+  background-color: inherit;
+  font: inherit;
+  border: none;
+}
+
+.card input:focus-visible{
+  outline: none;
+}
+
+.save-button{
+  float: right;
+  margin-top: 5px;
+  border-radius: 30px;
+  background-color: green;
+  padding: 10px 30px;
+}
+
+.save-button:hover{
+  cursor: pointer;
+  border: solid green;
+  background-color: inherit;
+  color: black;
+  text-decoration: none;
+}
+
+.go-button{
+  float: right;
+  margin-top: 30px;
+  border-radius: 30px;
+  background-color: white;
+  padding: 10px 30px;
+}
+
+.go-button:hover{
+  cursor: pointer;
+  border: solid inherit;
+  background-color: inherit;
+  color: black;
+  text-decoration: none;
+}
+
+.card:hover .applied-button{
+  background-color: rgb(255, 0, 0);
+}
+
+.card:hover .wont-apply-button{
+  background-color: rgb(172, 49, 141);
+}
+
+.card:hover .to-apply-button{
   background-color: rgb(12, 247, 0);
 }

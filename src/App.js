@@ -2,15 +2,20 @@ import { useState, useEffect } from "react"
 import "./App.css"
 import Navbar from "./components/Navbar"
 import Card from "./components/Card"
+import AddCard from "./components/AddCard"
+import axios from "axios"
 
 function App() {
   const [cards, setCards] = useState([])
 
   useEffect(() => {
     const fetchData = async () => {
-      const httpRequest = await fetch("jopsForJopa.json")
-      const data = await httpRequest.json()
-      setCards(data.stellen)
+      const httpRequest = await axios.get("http://localhost:8080/")
+      setCards(
+        httpRequest.data.stellen.map(elem => {
+          return { ...elem, setCards: setCards, key: elem.id }
+        })
+      )
     }
     fetchData()
   }, [])
@@ -20,16 +25,9 @@ function App() {
       <Navbar />
       <div className="card-container">
         {cards.map(card => {
-          return (
-            <Card
-              typ={card.typ}
-              firma={card.firma}
-              position={card.position}
-              status={card.status}
-              link={card.link}
-            />
-          )
+          return <Card {...card} />
         })}
+        <AddCard setCards={setCards} cards={cards} />
       </div>
     </>
   )
