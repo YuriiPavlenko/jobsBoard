@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import { v4 as uuid4 } from "uuid"
 import EditableInfo from "./EditableInfo"
 
-const AddCard = ({ cards, setCards }) => {
+const AddCard = ({ setCards, mainUser }) => {
   const [adding, setAdding] = useState(false)
   const [position, setPosition] = useState("React ASP.NET")
   const [firma, setFirma] = useState("Google Inc.")
@@ -29,21 +29,41 @@ const AddCard = ({ cards, setCards }) => {
       position,
       link,
       id,
-      setCards,
-      key: id,
+      user: mainUser ? "kotya" : "kitya",
     }
-    axios.post(
-      "http://localhost:8080/",
-      JSON.stringify({ stellen: [...cards, { ...card, key: undefined }] }),
-      {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    )
     setAdding(false)
     setInitial()
-    setCards(previous => [...previous, card])
+    console.log("saving")
+    console.log(mainUser)
+    setCards(prev => {
+      const saveData = async () => {
+        const currentUserCards = prev.filter(
+          card => card.user === (mainUser ? "kotya" : "kitya")
+        )
+        console.log([...currentUserCards, card])
+        await axios.post(
+          mainUser
+            ? "http://localhost:8080/kotya"
+            : "http://localhost:8080/kitya",
+          JSON.stringify(
+            {
+              stellen: [...currentUserCards, card],
+            },
+            null,
+            2
+          ),
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        )
+      }
+      saveData().then(a => {
+        console.log("save completed")
+      })
+      return [...prev, card]
+    })
   }
 
   return (

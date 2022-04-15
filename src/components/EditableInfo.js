@@ -12,7 +12,7 @@ const EditableInfo = ({ name, title, defaultValue, setter, xAction }) => {
           defaultValue={defaultValue}
         />
         {title ? (
-          <button className="button" onClick={xAction}>
+          <button className="button" onClick={() => xAction()}>
             X
           </button>
         ) : null}

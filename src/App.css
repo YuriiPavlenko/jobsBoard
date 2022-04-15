@@ -1,51 +1,245 @@
-*{
-  box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+ html {
+	 box-sizing: border-box;
+}
+ *, *:before, *:after {
+	 box-sizing: inherit;
+	 padding: 0;
+	 margin: 0;
+	 letter-spacing: 1.1px;
+}
+ body, html {
+	 font-family: "Varela Round", sans-serif;
+   background: linear-gradient(90deg, rgba(198,43,88,1) 0%, rgba(38,35,36,1) 54%, rgba(159,72,36,1) 100%);
+  }
+.top-bar{
+  padding-right: 100px;
+  display: flex;
+  background-color: #2d1e22;
+  align-content: center;
+  align-items: center;
 }
 
-nav{
-  display: grid;
-  column-gap: minmax(5px, 20px);
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr;
+.toggle-text-kotya{
+  color: hsla(199, 43%, 59%, 1);
+  margin-left: 20px;
+}
+
+.toggle-text-kitya{
+  color: hsla(18, 77%, 50%, 1);
+  margin-right: 20px;
+}
+
+ .menu {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 max-width: 720px;
+	 margin: 20px auto 10px auto;
+	 list-style: none;
+   width: 90%;
+}
+
+form {
+  width: 60px;
+  height: 35px;
+  border-radius: 500px;
+  background: linear-gradient(#ffbd00, #ca7900);
+}
+
+.toggle {
+  display: flex;
   justify-content: center;
-  background-color: gray;
+  align-items: center;
+  width: 60px;
+  height: 35px;
+  background: #ffad00;
+  border-radius: 500px;
+  border: solid 5px transparent;
+  background-clip: padding-box;
+  cursor: pointer;
 }
 
-nav a{
-  color: #f6f4e6;
-  border:solid;
-  border-color: rgba(0, 0, 0, 0.37);
-  border-width: 1px; 
-  text-decoration: none;
-  font-size: 1.2em;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 500;
-  display: inline-block;
+.toggle__wrapper {
+  width: 50px;
+  height: 25px;
+  margin: -4px -2px; 
+  border-radius: 500px;
+  background: linear-gradient(hsla(39, 100%, 44%, 1), hsla(39, 100%, 42%, 0.1));
+  box-shadow: 0px 5px 1px 0 hsla(41, 100%, 57%, 0.7);
+}
+
+.toggle__bg {
+  width: 50px;
+  height: 25px;
+  background: hsla(199, 43%, 59%, 1);
+  background: linear-gradient(to right, hsla(199, 43%, 59%, 1) 50%, hsla(18, 77%, 50%, 1) 50% 100%);
+  background-size: 200% 100%;
+  background-position: 75%;
+  border-radius: 500px;
+  border: solid 5px transparent;
+  background-clip: padding-box;
+  box-shadow: inset 0px 30px 50px 15px hsla(0, 0%, 0%, 0.30);
+  transition: all 0.35s ease-in-out;
+}
+
+.toggle__sphere {
+  position: relative;
+  height: 23.8px;
+  width: 23.8px;
+  top: -2px;
+  left: -3px;
+  background: hsla(18, 100%, 62%, 1);
+  background: 
+    linear-gradient(to right, hsla(199, 43%, 59%, 1) 50%, hsla(18, 77%, 50%, 1) 50% 100%);
+  border-radius: 50%;
+  transform-origin: top left;
+  box-shadow:  
+    2px 0px 5px 1px hsla(18, 77%, 15%, 0.05), 
+    0px 10px 10px 1px hsla(18, 77%, 15%, 0.2), 
+    -3px 0px 3px 1px hsla(0, 0%, 0%, 0.75);
+  transition: all 0.35s ease-in-out;
+}
+
+.toggle__sphere:before, 
+.toggle__sphere:after {
+  content: '';
+  position: absolute;
+  left: calc(50% - 2px);
+  height: 1px;
+  width: 4px;
+  border-radius: 50%;
+}
+
+.toggle__sphere-overlay {
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: inset 0px -30px 30px 15px hsla(0, 0%, 0%, 0.1)
+}
+
+.toggle__sphere-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+  transition: transform 0.35s ease-in-out;
+}
+
+.toggle__sphere-bg:before, 
+.toggle__sphere-bg:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.toggle__sphere-bg:before {
+  background-color: hsla(18, 77%, 50%, 1);
+  border-radius: 50%;
+}
+
+.toggle__sphere-bg:after {
+  background-color: hsla(199, 43%, 59%, 1);
+  transform: rotateY(180deg);
+  border-radius: 50%;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.toggle input:checked + .toggle__bg {
+  background-position: 25%;
+}
+
+.toggle input:checked + .toggle__bg .toggle__sphere {
+  transform: translateX(22px);
+  box-shadow:  
+    -2px 0px 5px 1px hsla(18, 77%, 15%, 0.05), 
+    0px 10px 10px 1px hsla(18, 77%, 15%, 0.2), 
+    3px 0px 3px 0px hsla(0, 0%, 0%, 0.75);
+}
+
+.toggle input:checked + .toggle__bg .toggle__sphere-bg {
+  transform: rotateY(180deg);
+}
+ .menu li {
+   cursor: pointer;
+	 width: 125px;
+	 height: 50px;
+	 transition: background-position-x 0.9s linear;
+	 text-align: center;
+}
+ .menu li a {
+	 font-size: 22px;
+	 color: #777;
+	 text-decoration: none;
+	 transition: all 0.45s;
+}
+ .menu li:hover {
+	 background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+	 animation: line 1s;
+}
+ .menu li:hover a {
+	 color: #d94f5c;
+}
+ .menu li:not(:last-child) {
+	 margin-right: 30px;
+}
+ @keyframes line {
+	 0% {
+		 background-position-x: 390px;
+	}
 }
 
 .card-container {
   padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 100%;
-  background-color: pink;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
-  column-gap: 10px;
+  grid-template-columns: repeat(auto-fill, 30em);
   justify-content: center;
-  row-gap: 20px;
+  gap: 40px;
 }
 
 .card{
-  padding: 10px;
-  width: 450px;
-  height: 240px;
+  padding: 1em;
+  width: 30em;
+  position: relative;
+  top: 0px;
+  height: 15em;
   border: solid;
   border-radius: 10px;
+  transition: top 1s;
+	backdrop-filter: blur(10px);
 }
 
+.card:hover{
+  background-color: inherit;
+  top: -20px;
+  transform: scale(1.05);
+  transition: top 1s;
+}
 .card-name{
-  font-size: x-large;
+  font-size:medium;
+  font-weight: 700;
+}
+
+.card-name input{
+  width: 95%;
+  font-size:medium;
   font-weight: 700;
 }
 
@@ -59,11 +253,6 @@ nav a{
   font-weight: 600;
 }
 
-.card:hover{
-  background-color: inherit;
-
-}
-
 a{
   all:unset;
 }
@@ -73,6 +262,9 @@ a{
   border: none;
   font-size: x-large;
   background-color: inherit;
+  width: 5px;
+  top: -15px;
+  position: relative;
 }
 
 .button:hover{
@@ -81,7 +273,7 @@ a{
 }
 
 .applied{
-  background-color: rgb(255, 0, 0);
+  background-color: rgba(255, 0, 0, .3);
 }
 
 .applied:hover{
@@ -89,7 +281,7 @@ a{
 }
 
 .wont-apply{
-  background-color: rgb(172, 49, 141);
+  background-color: rgba(172, 49, 141, .3);
 }
 
 .wont-apply:hover{
@@ -97,7 +289,7 @@ a{
 }
 
 .to-apply{
-  background-color: rgb(12, 247, 0);
+  background-color: rgba(12, 247, 0, .3);
 }
 
 .to-apply:hover{
@@ -110,7 +302,6 @@ a{
   border:solid rgba(0, 0, 0, 0.37);
   width: 40px;
   height: 40px;
-  line-height: 1;
   border-radius: 100px;
   background-color: inherit;
 }
@@ -155,15 +346,14 @@ a{
   float: right;
   margin-top: 30px;
   border-radius: 30px;
-  background-color: white;
+  background-color:inherit;
+  border: solid 1px black;
   padding: 10px 30px;
 }
 
 .go-button:hover{
   cursor: pointer;
   border: solid inherit;
-  background-color: inherit;
-  color: black;
   text-decoration: none;
 }
 
