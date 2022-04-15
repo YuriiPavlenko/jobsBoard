@@ -8,14 +8,25 @@ app.use(cors())
 app.use(express.json())
 app.use(bodyParser.json())
 
-app.get("", (req, res) => {
-  const data = fs.readFileSync("data.json")
+app.get("/kotya", (req, res) => {
+  const data = fs.readFileSync("kotya.json")
   const results = JSON.parse(data)
   res.send(results)
 })
 
-app.post("", (req, res) => {
-  fs.writeFile("data.json", JSON.stringify(req.body, null, 2), () => {})
+app.get("/kitya", (req, res) => {
+  const data = fs.readFileSync("kitya.json")
+  const results = JSON.parse(data)
+  res.send(results)
+})
+
+app.post("/kotya", (req, res) => {
+  fs.writeFile("kotya.json", JSON.stringify(req.body, null, 2), () => {})
+  res.send("success")
+})
+
+app.post("/kitya", (req, res) => {
+  fs.writeFile("kitya.json", JSON.stringify(req.body, null, 2), () => {})
   res.send("success")
 })
 

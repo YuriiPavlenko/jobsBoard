@@ -1,0 +1,76 @@
+{
+  "stellen": [
+    {
+      "typ": "Data Science",
+      "firma": "DB",
+      "status": "won't apply",
+      "position": "Data Sciensce 13 st./woche",
+      "link": "https://karriere.deutschebahn.com/karriere-de/Suche/Werkstudent-Data-Science-w-m-d--7269560?jobId=133298",
+      "id": "82ea25c0-79d5-538d-a548-54125a712b9a",
+      "key": "82ea25c0-79d5-538d-a548-54125a712b9a"
+    },
+    {
+      "typ": "Data Science",
+      "firma": "KPMG",
+      "status": "to be applied",
+      "position": "Data Science / Data Analytics",
+      "link": "https://jobs.kpmg.de/default/job/Berlin-Werkstudent-%28wmd%29-Data-Science-Data-Analytics-10785/571913501/",
+      "id": "f433397b-962f-5a32-849e-48300a7854b8",
+      "key": "f433397b-962f-5a32-849e-48300a7854b8"
+    },
+    {
+      "typ": "Data Science",
+      "firma": "Knuddles",
+      "status": "applied",
+      "position": "Data Science / Data Engineering",
+      "link": "https://knuddels.recruitee.com/o/werkstudentin-data-science-data-engineering-mwd",
+      "id": "a17ffedb-7ebb-523a-823b-2c2572eb60b4",
+      "key": "a17ffedb-7ebb-523a-823b-2c2572eb60b4"
+    },
+    {
+      "typ": "Data Science",
+      "firma": "Viridium",
+      "status": "to be applied",
+      "position": "Risk Analytics",
+      "link": "https://www.viridium-gruppe.com/karriere/stellenangebote/detail/werkstudentin-risk-analytics/",
+      "id": "e4b95d81-499c-599f-881c-28eb90ac22a2",
+      "key": "e4b95d81-499c-599f-881c-28eb90ac22a2"
+    },
+    {
+      "typ": "Data Science",
+      "firma": "Fincite",
+      "status": "to be applied",
+      "position": "DS Quantitative Analyst",
+      "link": "https://fincite-gmbh.jobs.personio.de/job/600127?display=en",
+      "id": "669a96f9-2ab0-5d3f-8841-5f73fc0b2cb7",
+      "key": "669a96f9-2ab0-5d3f-8841-5f73fc0b2cb7"
+    },
+    {
+      "typ": "Data Science",
+      "firma": "UNITY Consulting and Innovation",
+      "status": "to be applied",
+      "position": "Data Science & Software Engineering",
+      "link": "https://jobs.unity-innovation-alliance.com/Studentische-HilfskraftPraktikant-Data-Science-Software-En-eng-j414.html",
+      "id": "41d932ce-ab96-5821-bec3-464052ee50e7",
+      "key": "41d932ce-ab96-5821-bec3-464052ee50e7"
+    },
+    {
+      "typ": "Data Science",
+      "firma": "Reply",
+      "status": "to be applied",
+      "position": "Artificial Intelligence",
+      "link": "https://www.reply.com/de/about/careers/jobdetails?jobid=JO-DEU-1097",
+      "id": "144be258-eb3c-5fd4-bd88-832212ce2118",
+      "key": "144be258-eb3c-5fd4-bd88-832212ce2118"
+    },
+    {
+      "typ": "Project Management",
+      "firma": "DB",
+      "status": "applied",
+      "position": "PM Digitalisation",
+      "link": "https://karriere.deutschebahn.com/karriere-de/Suche/Werkstudent-Digitalization-w-m-d--7518424?jobId=147404",
+      "id": "29db7866-650d-5a75-b5ff-1e8a530700bc",
+      "key": "29db7866-650d-5a75-b5ff-1e8a530700bc"
+    }
+  ]
+}
